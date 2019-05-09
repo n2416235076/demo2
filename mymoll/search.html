@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搜索</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/search.css">
+	<meta name="viewport" content="width=750,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no">
+	<script type="text/javascript">
+    	function setWidth(e){
+    		if(/Andriod/i.test(navigator.userAgent))
+    		{
+    			var f,d=window.innerWidth;
+    			(d!=e)&&(f=d/e),document.addEventListener("DOMContentLoaded",function(){
+	    				var a=document.getElementsByTagName("body")[0];
+		    			a.style.webkitTransformOrigin="left top";
+		    			a.style.webkitTransform="scale("+f+")"},!1)
+    				}
+    		}
+    		setWidth(750);
+    </script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<a href="index.html">&lt;</a>
+			<input placeholder="输入商家、分类或商圈" type="text">
+			<img src="images/header-beer.png" alt="">
+		</header>
+		<div class="popular">
+			<input type="radio" name="popular" id="popular1" checked>
+			<div class="pop-li">
+				<div>
+					<span>热门搜索</span>
+					<p>其美烤肉自助火锅城</p>
+					<p>新聚点量版ktv</p>
+				</div>
+				<div>
+					<p>新聚点量版ktv</p>
+					<p>新聚点量版ktv</p>
+				</div>
+				<div>
+					<p>新聚点量版ktv</p>
+					<p></p>
+				</div>
+			</div>
+			<input type="radio" name="popular" id="popular2">
+			<div class="pop-li">
+				<div>
+					<span>热门搜索</span>
+					<p>其美烤肉自助火锅城</p>
+					<p>新聚点ktv</p>
+				</div>
+				<div>
+					<p>新聚点ktv</p>
+					<p>新聚点ktv</p>
+				</div>
+				<div>
+					<p>新聚点ktv</p>
+					<p></p>
+				</div>
+			</div>
+			<input type="radio" name="popular" id="popular3">
+			<div class="pop-li">
+				<div>
+					<span>热门搜索</span>
+					<p>其美烤肉自助火锅城</p>
+					<p>火焰醉鹅</p>
+				</div>
+				<div>
+					<p>火焰醉鹅</p>
+					<p>火焰醉鹅</p>
+				</div>
+				<div>
+					<p>火焰醉鹅</p>
+					<p></p>
+				</div>
+			</div>
+			<div class="pop-yuan">
+				<label for="popular1"></label>
+				<label for="popular2"></label>
+				<label for="popular3"></label>
+			</div>
+		</div>
+		<div class="flow">
+			<div>
+				<img src="images/search-flow.png" alt="">
+				<span>联通流量充值</span>
+			</div>
+			<div>
+				<img src="images/search-flow.png" alt="">
+				<span>联通流量充值</span>
+			</div>
+			<div>
+				<img src="images/search-flow.png" alt="">
+				<span>联通流量充值</span>
+			</div>
+			<div>
+				<img src="images/search-flow.png" alt="">
+				<span>联通流量充值</span>
+			</div>
+			<div>
+				<img src="images/delete.png" alt="">
+				<span>删除历史记录</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

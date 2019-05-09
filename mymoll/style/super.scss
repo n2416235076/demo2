@@ -1,0 +1,194 @@
+header{
+	background:#fece02;
+	display:flex;
+	padding:19px 27px 17px 26px;
+
+	input{
+		margin:auto;
+		width:430px;
+		height:68px;
+		border:none;
+		border-radius:34px;
+		text-align:center;
+		font-size:30px;
+		background:#fee579;
+	}
+
+	input::-webkit-input-placeholder{
+		color:#fff5c9;
+	}
+
+	a{
+		margin:auto;
+	}
+}
+/* header end */
+
+.main{
+	background:#fff;
+	// column-count:4;
+	// column-fill:auto;
+	display:flex;
+
+	.main-left{
+		width:180px;
+		text-align:center;
+
+		h1{
+			font-size:30px;
+			color:#fea31e;
+			font-family:SON;
+			line-height:88px;
+		}
+
+		ul{
+			li{
+				padding-left:27px;
+				padding-right:33px;
+				font-size:30px;
+				color:#3c3c3c;
+				border-top:3px solid #d4d4d4;
+				line-height:91px;
+				background:#f8f8f8
+			}
+		}
+	}
+
+	.main-right{
+		width:570px;
+
+		h2{
+			line-height:47px;
+			padding-left:10px;
+			background:#f8f8f8;
+			font-size:30px;
+			color:#565656;
+		}
+
+		ul{
+			
+			li{
+				display:flex;
+				padding:17px 31px 20px 0px;
+				margin-left:26px;
+				border-bottom:1px solid #a1a1a1;
+
+				.main-rg-text{
+					padding-left:34px;
+				}
+				h6{
+					font-size:28px;
+					color:#404040;
+					font-weight:normal;
+					padding-bottom:15px;
+					span{
+						margin-right:8px;
+						padding:3px;
+						font-size:23px;
+						color:#ff4100;
+						border:2px solid #ff4100;
+						border-radius:10px;
+					}
+				}
+
+				.text-col{
+					display:flex;
+					.text-col-mon{
+						margin-right:auto;
+						p{
+							margin-top:7px;
+						}
+						p:first-child{
+							font-size:22px;
+							color:#fff;
+							background:#f85252;
+							line-height:42px;
+							display:inline-block;
+							padding:0 8px;
+							border-radius:11px;
+						}
+
+						p:nth-child(2){
+							font-size:30px;
+							color:#929091;
+						}
+
+						p:last-child{
+							font-size:36px;
+							color:#ff4100;
+						}
+					}
+
+					.text-col-plus{
+						margin-top:auto;
+						a{
+							font-size:55px;
+							color:#ff4400;
+							font-weight:bold;
+							width:64px;
+							height:64px;
+							border:3px solid #e3e3e3;
+							border-radius:50%;
+							display:inline-block;
+							text-align:center;
+							line-height:57px;
+						}
+					} 
+				}
+			}
+		}
+	}
+}
+
+/* main end */
+
+footer{
+	display:flex;
+	background:#fcfcfc;
+	padding:12px 31px 14px 23px;
+	border-top:2px solid #c3c3c3;
+	
+
+	a{
+		font-size:24px;
+		color:#949494;
+		margin:auto;
+		padding-top:61px;
+	}
+
+	a:hover{
+		color:#fea31e;
+	}
+
+	a:first-child{
+		background:url(../images/page-gray.png) no-repeat 50% 0;
+	}
+
+	a:first-child:hover{
+		background:url(../images/page-org.png) no-repeat 50% 0;
+	}
+
+	a:nth-child(2){
+		background:url(../images/give-gray.png) no-repeat 50% 0;
+	}
+
+	a:nth-child(2):hover{
+		background:url(../images/give-org.png) no-repeat 50% 0;
+	}
+
+	a:nth-child(3){
+		background:url(../images/top-gray.png) no-repeat 50% 0;
+	}
+
+	a:nth-child(3):hover{
+		background:url(../images/top-org.png) no-repeat 50% 0;
+	}
+
+	a:last-child{
+		background:url(../images/car-gray.png) no-repeat 50% 0;
+	}
+
+	a:last-child:hover{
+		background:url(../images/car-org.png) no-repeat 50% 0;
+	}
+}

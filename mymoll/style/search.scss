@@ -1,0 +1,134 @@
+.wrapper{
+	background:#eee;
+}
+header{
+	background:#fece02;
+	padding:20px 28px 19px 19px;
+	display:flex;
+
+	a{
+		font-size:60px;
+		color:#fff5c9;
+	}
+
+	input{
+		margin:auto;
+		width:430px;
+		height:67px;
+		border:none;
+		border-radius:34px;
+		text-align:center;
+		font-size:30px;
+		background:#fee579 url(../images/input-back.png) no-repeat 20px 50% ; 
+	}
+
+	input::-webkit-input-placeholder{
+		color:#fff5c9;
+	}
+}
+
+/* header end */
+
+
+.popular{
+	background:#eee;
+	padding:20px 18px 17px 21px;
+
+	>input{
+		display:none;
+	}
+
+	.pop-li{
+		display:none;
+		background:#fff;
+		padding:15px;
+
+		>div{
+			padding:30px 27px 30px 18px;
+			column-count:2;
+			font-size:30px;
+			color:#303030;
+			text-align:center;
+			border-bottom:1px solid #c2c2c2;
+
+			span{
+				color:#ff5b00;
+				line-height:60px;
+			}
+
+			p{
+				line-height:60px;
+				margin:auto;
+				border-right:1px solid #c2c2c2;
+				//padding:15px 0;
+			}
+
+			p:last-child{
+				border:none;
+			}
+		}
+
+		div:first-child{
+			display:flex;
+
+			>p:first-of-type{
+				border:none;
+				border-left:1px solid #c2c2c2;
+				border-right:1px solid #c2c2c2;
+				padding-left:7px;
+				padding-right:7px;
+			}
+		}
+	}
+
+	.pop-yuan{
+		text-align:center;
+		background:#fff;
+
+		label{
+			display:inline-block;
+			width:19px;
+			height:19px;
+			border:1px solid #c2c2c2;
+			border-radius:50%;
+			margin:16px 3px 21px;
+		}
+	}
+
+	>input:checked + .pop-li{
+		display:block;
+	}
+
+	>input[id=popular1]:checked ~ .pop-yuan label[for=popular1],
+	>input[id=popular2]:checked ~ .pop-yuan label[for=popular2],
+	>input[id=popular3]:checked ~ .pop-yuan label[for=popular3]{
+		background:#fe9002;
+	}
+}
+/* popular end */
+
+.flow{
+	background:#fff;
+	div{
+		line-height:92px;
+		border-bottom:1px solid #c2c2c2;
+
+		img{
+			padding-right:15px;
+			padding-left:28px;
+		}
+
+		span{
+			font-size:30px;
+			color:#474747;
+		}
+	}
+
+	div:last-child{
+		text-align:center;
+		border:none;
+		span{
+			color:#a2a1a1;
+		}
+	}
+}

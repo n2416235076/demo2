@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商城首页</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/index.css">
+	<meta name="viewport" content="width=750,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no">
+	<script type="text/javascript">
+    	function setWidth(e){
+    		if(/Andriod/i.test(navigator.userAgent))
+    		{
+    			var f,d=window.innerWidth;
+    			(d!=e)&&(f=d/e),document.addEventListener("DOMContentLoaded",function(){
+	    				var a=document.getElementsByTagName("body")[0];
+		    			a.style.webkitTransformOrigin="left top";
+		    			a.style.webkitTransform="scale("+f+")"},!1)
+    				}
+    		}
+    		setWidth(750);
+    </script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<a href="search.html"><img src="images/header-beer.png" alt=""></a>
+			<input type="text" name="search" size="10" placeholder="输入商家、分类或商圈">
+			<a href=""><img src="images/header-code.png" alt=""></a>
+			<a href=""><img src="images/header-ling.png" alt=""></a>
+		</header>
+		<div class="link-img">
+			<a href=""><img src="images/link-img.png" alt=""></a>
+		</div>
+		<div class="fun">
+			<ul>
+				<li>
+					<a href="">
+						<img src="images/fun1.png" alt="">
+						<p>抽奖</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/fun2.png" alt="">
+						<p>兑换</p>
+					</a>
+				</li>
+				<li>
+					<a href="details.html">
+						<img src="images/fun3.png" alt="">
+						<p>促销</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/fun4.png" alt="">
+						<p>闪送超市</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="list">
+			<ul>
+				<li>
+					<div class="list-fresh">
+						<h1>Fresh奶</h1>
+						<h4>光明畅优乳杆菌 <span class="one">6</span> 元/<span class="two">2</span>瓶</h4>
+						<p>更多优惠 低至5折</p>
+					</div>
+					<div class="list-img">
+						<img src="images/list2.png" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="list-fresh">
+						<h1>Fresh奶</h1>
+						<h4>光明畅优乳杆菌 <span class="one">6</span> 元/<span class="two">2</span>瓶</h4>
+						<p>更多优惠 低至5折</p>
+					</div>
+					<div class="list-img">
+						<img src="images/list1.png" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="list-fresh">
+						<h1>Fresh奶</h1>
+						<h4>光明畅优乳杆菌 <span class="one">6</span> 元/<span class="two">2</span>瓶</h4>
+						<p>更多优惠 低至5折</p>
+					</div>
+					<div class="list-img">
+						<img src="images/list2.png" alt="">
+					</div>
+				</li>
+			</ul>
+		</div>
+		<footer>
+			<a href="index.html">首页</a>
+			<a href="super.html">闪送超市</a>
+			<a href="personal.html">我的</a>
+			<a href="">￥0起送</a>
+		</footer>
+	</div>
+</body>
+</html>

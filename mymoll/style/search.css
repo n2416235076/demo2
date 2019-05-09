@@ -1,0 +1,116 @@
+.wrapper {
+  background: #eee;
+}
+
+header {
+  background: #fece02;
+  padding: 20px 28px 19px 19px;
+  display: flex;
+}
+header a {
+  font-size: 60px;
+  color: #fff5c9;
+}
+header input {
+  margin: auto;
+  width: 430px;
+  height: 67px;
+  border: none;
+  border-radius: 34px;
+  text-align: center;
+  font-size: 30px;
+  background: #fee579 url(../images/input-back.png) no-repeat 20px 50%;
+}
+header input::-webkit-input-placeholder {
+  color: #fff5c9;
+}
+
+/* header end */
+.popular {
+  background: #eee;
+  padding: 20px 18px 17px 21px;
+}
+.popular > input {
+  display: none;
+}
+.popular .pop-li {
+  display: none;
+  background: #fff;
+  padding: 15px;
+}
+.popular .pop-li > div {
+  padding: 30px 27px 30px 18px;
+  column-count: 2;
+  font-size: 30px;
+  color: #303030;
+  text-align: center;
+  border-bottom: 1px solid #c2c2c2;
+}
+.popular .pop-li > div span {
+  color: #ff5b00;
+  line-height: 60px;
+}
+.popular .pop-li > div p {
+  line-height: 60px;
+  margin: auto;
+  border-right: 1px solid #c2c2c2;
+}
+.popular .pop-li > div p:last-child {
+  border: none;
+}
+.popular .pop-li div:first-child {
+  display: flex;
+}
+.popular .pop-li div:first-child > p:first-of-type {
+  border: none;
+  border-left: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.popular .pop-yuan {
+  text-align: center;
+  background: #fff;
+}
+.popular .pop-yuan label {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #c2c2c2;
+  border-radius: 50%;
+  margin: 16px 3px 21px;
+}
+.popular > input:checked + .pop-li {
+  display: block;
+}
+.popular > input[id=popular1]:checked ~ .pop-yuan label[for=popular1],
+.popular > input[id=popular2]:checked ~ .pop-yuan label[for=popular2],
+.popular > input[id=popular3]:checked ~ .pop-yuan label[for=popular3] {
+  background: #fe9002;
+}
+
+/* popular end */
+.flow {
+  background: #fff;
+}
+.flow div {
+  line-height: 92px;
+  border-bottom: 1px solid #c2c2c2;
+}
+.flow div img {
+  padding-right: 15px;
+  padding-left: 28px;
+}
+.flow div span {
+  font-size: 30px;
+  color: #474747;
+}
+.flow div:last-child {
+  text-align: center;
+  border: none;
+}
+.flow div:last-child span {
+  color: #a2a1a1;
+}
+
+/*# sourceMappingURL=search.css.map */

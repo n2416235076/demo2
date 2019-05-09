@@ -1,0 +1,98 @@
+.wrapper {
+  background: #eaebef;
+}
+
+header {
+  background: #fefefe;
+  display: flex;
+  border-bottom: 3px solid #d9d9d9;
+  padding: 15px 0;
+}
+header a {
+  font-size: 70px;
+  color: #fd540e;
+  margin: auto;
+}
+header span {
+  font-size: 32px;
+  color: #000;
+  margin: auto;
+}
+
+/* header end */
+.food {
+  background: #fff;
+}
+.food .food-img {
+  text-align: center;
+  padding: 50px 0;
+  border-bottom: 3px solid #dcdcdc;
+}
+.food h1 {
+  font-size: 37px;
+  color: #000;
+  margin: 23px 0 45px 33px;
+}
+.food h2 {
+  font-size: 48px;
+  color: #e8470e;
+  padding-left: 40px;
+  border-bottom: 3px solid #dbdbdb;
+  padding-bottom: 18px;
+}
+.food h2 span {
+  font-size: 37px;
+}
+.food h2 s {
+  padding-left: 30px;
+  font-size: 42px;
+  color: #cecece;
+}
+.food p {
+  background: #f8f8f8;
+  font-size: 28px;
+  color: #000;
+  border-bottom: 3px solid #dbdbdb;
+}
+.food p span {
+  font-size: 30px;
+  color: #9e9e9e;
+  padding: 25px 0 25px 25px;
+  text-align: justify;
+  display: inline-block;
+  width: 200px;
+}
+
+/* food end */
+.song {
+  height: 495px;
+  background: url(../images/aixianfeng.png) no-repeat;
+  margin-top: 15px;
+}
+.song .song-text {
+  position: relative;
+  top: 84%;
+  padding-left: 33px;
+}
+.song .song-text span:first-child {
+  font-size: 30px;
+  color: #232323;
+}
+.song .song-text a {
+  font-size: 53px;
+  color: #fea31e;
+  width: 61px;
+  height: 61px;
+  display: inline-block;
+  text-align: center;
+  line-height: 53px;
+  background: #fff;
+  border: 2px solid #cecccc;
+  border-radius: 50%;
+}
+.song .song-text span:last-of-type {
+  font-size: 36px;
+  color: #727272;
+}
+
+/*# sourceMappingURL=details.css.map */

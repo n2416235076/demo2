@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人信息</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/personal.css">
+	<meta name="viewport" content="width=750,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no">
+	<script type="text/javascript">
+    	function setWidth(e){
+    		if(/Andriod/i.test(navigator.userAgent))
+    		{
+    			var f,d=window.innerWidth;
+    			(d!=e)&&(f=d/e),document.addEventListener("DOMContentLoaded",function(){
+	    				var a=document.getElementsByTagName("body")[0];
+		    			a.style.webkitTransformOrigin="left top";
+		    			a.style.webkitTransform="scale("+f+")"},!1)
+    				}
+    		}
+    		setWidth(750);
+    </script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<img src="images/personal-head.png" alt="">
+		</header>
+		<div class="mine">
+			<a href="">
+				<img src="images/mine-order.png" alt="">
+				<p>我的订单</p>
+			</a>
+			<a href="">
+				<img src="images/mine-coupon.png" alt="">
+				<p>优惠券</p>
+			</a>
+			<a href="">
+				<img src="images/mine-news.png" alt="">
+				<p>我的消息</p>
+			</a>
+		</div>
+		<div class="array">
+			<ul>
+				<li>
+					<a href="">
+						<img src="images/array-address.png" alt="">
+						<span>我的收货地址</span>
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/array-share.png" alt="">
+						<span>把爱鲜蜂分享给朋友</span>
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/array-custom.png" alt="">
+						<span>客服帮助</span>
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/array-tel.png" alt="">
+						<span>客服电话：400-8484-842</span>
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/array-install.png" alt="">
+						<span>设置</span>
+						<span>></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<footer>
+			<a href="index.html">首页</a>
+			<a href="super.html">闪送超市</a>
+			<a href="">我的</a>
+			<a href="">￥0起送</a>
+		</footer>
+	</div>
+</body>
+</html>
