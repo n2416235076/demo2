@@ -1,0 +1,87 @@
+vue 创建项目
+	全局安装 vue vue-cli
+	创建一个基于webpack模板的新项目 
+		vue init webpack 自定义项目名称
+		此命令会自动创建文件夹
+	cd进入项目目录安装依赖
+		cnpm install
+		cnpm run dev 运行
+	创建dist开发目录
+		cnpm run build 自动生成
+
+创建的app对应的是入口文件index.html的id=app，app.vue中的id=app只是一个id，可删除
+
+创建开发版本github文件夹：cnpm run build，创建dist文件夹，里面存放的是压缩后的文件
+
+
+配置报错语法警告信息
+	build/webpack.base.conf.js 注释createLintingRule里面的内容
+
+1、入口文件
+main.js 加载模块，设置弹窗应用等
+App.vue 引入组件.vue，计算属性等
+
+
+vuex状态管理 mution修改状态 需新建目录(src/store)
+vue2-toast 弹窗
+中间件
+vuex vue2-toast 
+css-loader cssnano node-sass sass-loader vue vue-router vue-style-loader
+
+
+2、路由
+引入组件
+应用路由到Vue
+配置路由：路径、名称、组件
+
+
+3、新建组件
+	home.vue、header.vue...
+	弹窗：header.vue a标签绑定点击事件 this.$emit('tools');绑定父元素事件
+
+
+vuex 状态管理模型
+	state：状态、view：视图、actions：动作 相分离
+	入口文件 引入index.js->import theme from './theme'，并导入管理集模块->modules:{theme}
+	公共函数库、
+	actions.js获取动作
+	->提交给mutations.js,在此修改状态设置存储
+	->getters.js获取状态，返回给组件
+
+
+localStorage 本地存储 时间限制：永久保存  Application中查看
+sessionStorage  本地存储 时间限制：会话结束销毁(二者唯一区别)  Application中查看
+另一种存储				关闭浏览器失效
+
+
+主题切换：
+	theme.vue
+	点击事件，穿一个color参数，用vuex的dispatch提交动作到actions
+	actions获取动作，提交给mutations修改状态
+	mutations修改状态并设置本地存储
+	getters获取状态返回给组件
+	app.vue调用getters的函数接收状态值
+
+添加组件：
+	输入内容，回车键或点击提交，把备忘录添加到列表组件并保存到localStorage
+	报错：
+		unknown action type: addevent
+		1、event_add.vue的addevent在actions.js没有定义，或者写错名字
+		2、状态管理模型store中主入口文件未引入
+
+列表组件
+	点击复选框移动到已完成，点击取消移动到取消
+	点击span显示或隐藏列表
+
+
+$event 内联语句 用于访问dom事件
+	@click="changeCollapse(1,$event)
+sass引用父选择符： &
+currentTarget 事件属性返回其监听器触发事件的节点，即当前处理该事件的元素、文档或窗口。
+nextElementSibling下一个兄弟节点
+
+
+excel 插件
+	https://github.com/jecovier/vue-json-excel
+	cnpm install vue-json-excel --save
+	sidebar.vue 中加载插件

@@ -1,0 +1,52 @@
+内置服务吗compGetters
+...引用life
+
+插件大小写：'vue' 'vuex'
+
+git clone https://github.com/xianshenglu/vue.git
+
+ Set up unit tests 设置单元测试 no
+
+ 代理
+
+ mint-ui 第三方插件 https://github.com/mint-ui/docs
+
+
+ App.vue 
+ 	keep-alive 是Vue的内置组件，能在组件切换过程中将状态保留在内存中，防止重复渲染DOM。
+ 			   详情：https://www.cnblogs.com/sysuhanyf/p/7454530.html
+ 			   其在包裹动态组件时，会缓存不活动的组件实例
+
+ 	router-view 子路由组件，内嵌路由。同一页面不同路由，顶级外链
+ 				https://github.com/vuejs/vue-router/blob/1.0/docs/zh-cn/nested.md
+
+main.js 
+	Vue.config.productionTip = false 阻止启动生产消息，常用作指令。去掉警告
+	Vue.prototype.$http = axios 第三方插件加载方式：prototype
+
+路由index.js
+	引入vue,vue-router,@/components/NewSongs(路由地址)
+	Vue.use(router) 加载路由
+	export default new Router({routers[]}); 配置路由,数组对象
+	redirect 重定向路由，可以重定向到命名的路由或一个方法
+	alias 别名，路由/a,别名/b,访问/b,url为/b,实际上访问/a
+	https://router.vuejs.org/zh/guide/essentials/redirect-and-alias.html
+	axios 是一个基于Promise 用于浏览器和 nodejs 的 HTTP 客户端
+		  https://www.cnblogs.com/libin-1/p/6607945.html
+	export default new Vuex.Store({}); 状态管理模型
+
+componets组件：
+	主路由NewSongs.vue
+		轮播图、音乐列表
+		created 生命周期，钩子。应用实例化后调用
+		mint-ui Indicator  加载第三方插件 加载提示框
+			支持自定义文本和加载图标。 
+			Indicator.open({}); 启动加载层 text=>文本内容 spinnerType=>加载图标的类型(4种)
+			Indicator.close(); 关闭loading加载
+			http://www.yoyo88.cn/study/vue/177.html
+
+
+
+
+...ES6迭代
+
